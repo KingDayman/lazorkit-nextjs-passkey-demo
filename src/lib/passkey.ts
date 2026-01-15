@@ -7,10 +7,11 @@ import {
   startRegistration,
   startAuthentication,
 } from '@simplewebauthn/browser';
+import { startRegistration, startAuthentication } from '@simplewebauthn/browser';
 import type {
   PublicKeyCredentialCreationOptionsJSON,
   PublicKeyCredentialRequestOptionsJSON,
-} from '@simplewebauthn/browser';
+} from '@simplewebauthn/types';
 
 const RP_NAME = process.env.NEXT_PUBLIC_RP_NAME || 'Lazorkit Passkey Demo';
 const RP_ID = process.env.NEXT_PUBLIC_RP_ID || 'localhost';
